@@ -1,2 +1,2 @@
 # CS221-aoa
-Aoa assignment for CS221
+Analysis of Algorithms assignment for CS221
