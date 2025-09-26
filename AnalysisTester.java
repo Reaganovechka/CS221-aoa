@@ -15,6 +15,7 @@ public class AnalysisTester {
      */
     public static void main(String[] args) {
         int[] data = {5, 3, 8, 1, 2};
+        int[] data2 = {1, 2, 3, 4, 5};
         int[] empty = {};
 
         //Analyze find method
@@ -23,10 +24,14 @@ public class AnalysisTester {
         int index = MethodsToAnalyze.find(data, 3);
 
         //Analyze replaceAll method
+        MethodsToAnalyze.replaceAll(empty, 3, 7);
+        MethodsToAnalyze.replaceAll(data, 9, 7); //oldValue not in array
         MethodsToAnalyze.replaceAll(data, 3, 7);
 
         //Analyze sortIt method
         MethodsToAnalyze.sortIt(data);
+        MethodsToAnalyze.sortIt(data2); //best case
+        MethodsToAnalyze.sortIt(empty);
 
     }
     
